@@ -1,0 +1,25 @@
+I recently interviewed for the Java Associate role at Goldman Sachs, and I wanted to share the list of Java-focused core questions that were asked during my interview. These questions test both conceptual clarity and hands-on experience with Java.
+
+YOE : 4.5 yrs
+Current Role : SDE 2
+Location : Bangalore
+
+Here’s a list of the questions that were asked:
+
+What is immutable in Java?
+How does PriorityQueue work in Java?
+Define an immutable class.
+How is String immutable in Java?
+Define a singleton class.
+What is a functional interface?
+What are the different types of functional interfaces?
+What is a stream in Java?
+What is the difference between final, finally, and finalize in Java?
+What is the use of finalize() method?
+What is the purpose of a singleton class?
+What is the internal working of HashMap and HashSet?
+How does HashSet store unique values?
+What is the difference between DELETE and TRUNCATE in SQL?
+What are ACID properties in the context of databases?
+How can we define a method inside an interface?
+Which keyword is used to define a method in an interface (Java 8 onwards)?

@@ -1,0 +1,75 @@
+VIRTUAL MACHINE
+
+What is Virtual Machine?
+
+Before jump into the JVM, let’s discuss the concept of the virtual machine(VM). A virtual machine is some machine that physically does not exist. But VM will make the environment that you feel as it’s real. VM can be an operating system or application environment that is installed on software. There are two categories of VM as shown below.
+
+![alt text](image-1.png)
+
+System-based VM allows the sharing of the underlying physical machine resources (at least one hardware) between different virtual machines. But application-based VM does not have any hardware and it requires some application or software to create their virtual environment. That environment(platform) involves running some kind of a language and converting it into a different language. JVM is also under the application-based VM.
+
+
+Java Architecture
+
+Let’s look at Java architecture to get a high-level picture of JVM.
+
+![alt text](image.png)
+
+Let’s discuss the difference between JDK, JRE, and JVM in brief.
+
+Java Development Kit (JDK)
+The Java Development Kit (JDK) is a software development environment used for developing Java applications and applets. It includes the Java Runtime Environment (JRE), an interpreter/loader (Java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), and other tools needed in Java development.
+
+Java Runtime Environment (JRE)
+The Java Runtime Environment provides the minimum requirements for executing a Java application. It consists of the Java Virtual Machine (JVM), java core packages, classes, and supporting files.
+
+
+JVM - JAVA VIRTUAL MACHINE
+
+
+The Java Virtual Machine (JVM) is an abstract machine that provides the runtime environment for executing Java bytecode. It is a part of the Java Runtime Environment (JRE) and is responsible for loading, verifying, and executing Java class files. The JVM also manages runtime memory and provides services such as garbage collection.
+
+Java source code (.java) is compiled by javac into bytecode (.class).
+The JVM loads and links the required classes before executing them.
+Bytecode can be interpreted or compiled into native machine code by the JIT compiler.
+
+
+**Architecture of JVM**
+
+![alt text](image-2.png)
+
+There are three main mechanisms inside the JVM as shown in the above diagram.
+
+There are three main mechanisms inside the JVM as shown in the above diagram.
+
+1. ClassLoader
+2. Memory Area
+3. Execution Engine
+
+JVM langauge class 
+
+Components of JVM Architecture
+
+Now, we are going to discuss each component of the JVM in detail.
+
+1. Class Loader Subsystem
+It is mainly responsible for three activities. 
+
+
+
+Resource Links :
+
+[https://www.geeksforgeeks.org/java/how-jvm-works-jvm-architecture/
+
+https://medium.com/java-for-beginners/understanding-java-virtual-machine-jvm-architecture-e68d1c611026
+
+https://www.youtube.com/watch?v=bUtIIWbaFKc&list=PLD-mYtebG3X-rF1hU16AC3Rf9E-mAAkXJ]
+
+
+Interview experience link
+
+https://www.geeksforgeeks.org/interview-experiences/goldman-sachs-interview-experience-for-java-developer-3-years-experienced/
+
+
+
+
