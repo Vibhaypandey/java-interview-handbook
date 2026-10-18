@@ -37,6 +37,19 @@ public int add(int a, int b) {
 }
 
 
+3. What is the difference between a compiler and an interpreter? Is Java compiled or interpreted?
+
+Java is both a compiled and an interpreted language.
+
+A compiler translates source code into another form before execution, whereas an interpreter executes instructions at runtime.
+
+In Java, the `javac` compiler converts the source code in a `.java` file into platform-independent bytecode, which is stored in a `.class` file.
+
+At runtime, the JVM loads and executes this bytecode using an interpreter. It can also use the JIT compiler to convert frequently executed bytecode into native machine code to improve performance.
+
+Therefore, Java uses both compilation and runtime execution techniques, which is why it is commonly described as a hybrid language.
+
+
 - Interpreter: Method ke bytecode instructions ko execute karta hai.
 - JIT compiler: Agar JVM notice karti hai ki ye method baar-baar execute ho raha hai, toh woh iske liye optimized native machine code generate kar sakti hai.
 - Next executions: Compiled code reuse ho sakta hai, jisse execution faster ho sakta hai.
