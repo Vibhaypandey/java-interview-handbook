@@ -113,7 +113,18 @@ boolean	    1 bit	    boolean flag = true;	true or false
 
 
 ---------------------------------------------------------------------------------------------
+1. What is the String Pool in Java?
 
+https://www.geeksforgeeks.org/java/string-constant-pool-in-java/
 
 1. What is autoboxing and unboxing?
 https://www.geeksforgeeks.org/java/autoboxing-unboxing-java/
+
+
+
+---------------------------------------------------------------------------------
+
+
+1. What is the difference between final, finally, and finalize?
+
+https://www.geeksforgeeks.org/java/java-final-finally-and-finalize/
