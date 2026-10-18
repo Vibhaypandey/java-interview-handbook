@@ -1,0 +1,14 @@
+1. What is the difference between JDK, JRE, and JVM?
+link - https://www.geeksforgeeks.org/java/differences-jdk-jre-jvm/
+
+My answer -
+
+First, I install the JDK on my Windows operating system because it provides the tools required to develop Java applications.
+
+When I execute `javac Hello.java`, the Java compiler compiles the source code into bytecode and generates a `Hello.class` file.
+
+When I run `java Hello`, the JVM starts the execution process. It loads the required classes, verifies the bytecode, and performs linking and initialization.
+
+The JVM execution engine then executes the bytecode using an interpreter. For frequently executed code, the JIT compiler can compile the bytecode into native machine code to improve performance.
+
+Finally, the native machine instructions are executed by the processor. This process allows the same Java bytecode to run on different operating systems that have compatible JVM implementations.
