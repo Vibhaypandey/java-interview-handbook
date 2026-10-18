@@ -123,6 +123,20 @@ https://www.geeksforgeeks.org/java/autoboxing-unboxing-java/
 
 
 ---------------------------------------------------------------------------------
+1. what is the difference between String, StringBuilder, and StringBuffer?
+
+https://www.geeksforgeeks.org/java/string-vs-stringbuilder-vs-stringbuffer-in-java/
+
+The main difference between StringBuilder and StringBuffer is synchronization. Both are mutable and provide similar methods for modifying text. StringBuilder is not synchronized and is generally faster in single-threaded scenarios. StringBuffer provides synchronized methods for thread-safe access to individual operations, although multiple operations are not automatically atomic. Therefore, I would generally use StringBuilder for single-threaded text manipulation and StringBuffer when synchronized access to a shared mutable buffer is required.
+
+
+
+
+
+
+
+
+
 
 
 1. What is the difference between final, finally, and finalize?
