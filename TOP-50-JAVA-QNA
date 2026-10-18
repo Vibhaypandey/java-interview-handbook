@@ -92,3 +92,21 @@ System.out.println(a.equals(b));  // true
 ```
 
 **Key takeaway:** `==` compares primitive values or object references, whereas `.equals()` checks logical equality according to the class's implementation.
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------
+1. What are the eight primitive data types in Java?
+
+Data type	 Size		Used for
+byte	     8 bits		Small integers
+short	     16 bits	Small-to-medium integers
+int	         32 bits	Whole numbers
+long	    64 bits		Large whole numbers
+float	    32 bits	    Decimal numbers
+double	    64 bits	    More precise decimal numbers
+char	    16 bits	    A single UTF-16 code unit
+boolean	    1 bit	    boolean flag = true;	true or false
