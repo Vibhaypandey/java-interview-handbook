@@ -53,3 +53,42 @@ Therefore, Java uses both compilation and runtime execution techniques, which is
 - Interpreter: Method ke bytecode instructions ko execute karta hai.
 - JIT compiler: Agar JVM notice karti hai ki ye method baar-baar execute ho raha hai, toh woh iske liye optimized native machine code generate kar sakti hai.
 - Next executions: Compiled code reuse ho sakta hai, jisse execution faster ho sakta hai.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+1. What is the difference between == and .equals() in Java?
+
+The main difference between `==` and `.equals()` is that `==` compares values for primitives and object references for objects. The `.equals()` method checks logical equality between objects, depending on how the class implements it. For example, the `String` class overrides `.equals()` to compare string contents, while the default implementation in the `Object` class checks reference identity.
+
+### Difference Between `==` and `.equals()` in Java
+
+1. **`==` operator**
+   - For primitive data types, it compares values.
+   - For objects, it compares references, i.e., whether both references point to the same object.
+
+2. **`.equals()` method**
+   - It is used to check logical equality between objects.
+   - If a class overrides `.equals()`, its implementation determines what equality means, such as comparing object contents.
+   - If a class does not override `.equals()`, it uses the default implementation inherited from the `Object` class, which compares object identity (references).
+
+3. **Built-in classes**
+   - Classes like `String`, `Integer`, and `Double` override `.equals()` to compare their values.
+   - Even if a reference variable is declared as `Object`, the actual object's overridden `.equals()` method is called at runtime.
+
+4. **Primitive vs. wrapper types**
+   - Primitive types such as `int` and `double` cannot directly call `.equals()`.
+   - Wrapper classes such as `Integer` and `Double` are objects, so `.equals()` can be used to compare their values.
+
+**Example:**
+
+```java
+Object a = new String("Hello");
+Object b = new String("Hello");
+
+System.out.println(a == b);       // false
+System.out.println(a.equals(b));  // true
+```
+
+**Key takeaway:** `==` compares primitive values or object references, whereas `.equals()` checks logical equality according to the class's implementation.
