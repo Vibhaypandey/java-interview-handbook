@@ -1,6 +1,12 @@
 1. What is the difference between JDK, JRE, and JVM?
 link - https://www.geeksforgeeks.org/java/differences-jdk-jre-jvm/
 
+https://leetcode.com/discuss/post/781659/morgan-stanley-java-developer-interview-bq41m/
+
+Follow -up
+
+Q1. Why is Java platform-independent? Explain bytecode and JVM.
+
 My answer -
 
 First, I install the JDK on my Windows operating system because it provides the tools required to develop Java applications.
@@ -12,3 +18,25 @@ When I run `java Hello`, the JVM starts the execution process. It loads the requ
 The JVM execution engine then executes the bytecode using an interpreter. For frequently executed code, the JIT compiler can compile the bytecode into native machine code to improve performance.
 
 Finally, the native machine instructions are executed by the processor. This process allows the same Java bytecode to run on different operating systems that have compatible JVM implementations.
+
+2. If the interpreter can execute bytecode, why do we need the JIT compiler at all? Why not interpret everything? 
+
+The interpreter can execute Java bytecode directly, but it interprets the instructions repeatedly whenever the code runs. This introduces some execution overhead.
+
+To improve performance, the JVM uses a Just-In-Time (JIT) compiler. It identifies frequently executed code, also known as hot code, and compiles it into native machine code that the processor can execute directly.
+
+Once the code is compiled, the JVM can reuse the generated machine code instead of interpreting the same bytecode repeatedly.
+
+Therefore, the interpreter helps the JVM start executing code quickly, while the JIT compiler improves performance for frequently executed code. The JVM combines both approaches to balance startup time and execution speed.
+
+
+1. Example se samjho
+Maan lo tumhare Java application mein ye method hai:
+public int add(int a, int b) {
+    return a + b;
+}
+
+
+- Interpreter: Method ke bytecode instructions ko execute karta hai.
+- JIT compiler: Agar JVM notice karti hai ki ye method baar-baar execute ho raha hai, toh woh iske liye optimized native machine code generate kar sakti hai.
+- Next executions: Compiled code reuse ho sakta hai, jisse execution faster ho sakta hai.
