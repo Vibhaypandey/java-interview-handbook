@@ -110,3 +110,10 @@ float	    32 bits	    Decimal numbers
 double	    64 bits	    More precise decimal numbers
 char	    16 bits	    A single UTF-16 code unit
 boolean	    1 bit	    boolean flag = true;	true or false
+
+
+---------------------------------------------------------------------------------------------
+
+
+1. What is autoboxing and unboxing?
+https://www.geeksforgeeks.org/java/autoboxing-unboxing-java/
