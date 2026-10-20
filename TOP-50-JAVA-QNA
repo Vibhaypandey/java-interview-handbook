@@ -210,4 +210,11 @@ Yes, you can overload main() like any other method. However, the JVM will only c
 The overloaded versions can be called explicitly within the code.
 
 
-Summary: Java mein main() method ko overload kar sakte hain, jaise main(int val) ya main(String args). Lekin JVM program start karne ke liye sirf standard public static void main(String[] args) method ko call karta hai. Baaki overloaded main() methods ko humein code ke andar se manually call karna padta hai.
+Summary: Java mein main() method ko overload kar sakte hain, jaise main(int val) ya main(String args). Lekin JVM program start karne ke liye sirf standard public static void main(String[] args) method ko call karta hai.
+Baaki overloaded main() methods ko humein code ke andar se manually call karna padta hai.
+
+
+Follow-up
+https://www.reddit.com/r/csharp/comments/18o9gua/i_cannot_understand_what_is_the_difference/
+
+
