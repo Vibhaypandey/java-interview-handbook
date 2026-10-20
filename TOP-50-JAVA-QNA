@@ -1,7 +1,7 @@
 1. What is the difference between JDK, JRE, and JVM?
 link - https://www.geeksforgeeks.org/java/differences-jdk-jre-jvm/
 
-https://leetcode.com/discuss/post/781659/morgan-stanley-java-developer-interview-bq41m/
+
 
 Follow -up
 
@@ -120,6 +120,10 @@ https://www.geeksforgeeks.org/java/string-constant-pool-in-java/
 1. What is autoboxing and unboxing?
 https://www.geeksforgeeks.org/java/autoboxing-unboxing-java/
 
+ int to Integer  - autoboxing
+
+ Integer to int  - unboxing
+
 
 
 ---------------------------------------------------------------------------------
@@ -127,7 +131,16 @@ https://www.geeksforgeeks.org/java/autoboxing-unboxing-java/
 
 https://www.geeksforgeeks.org/java/string-vs-stringbuilder-vs-stringbuffer-in-java/
 
-The main difference between StringBuilder and StringBuffer is synchronization. Both are mutable and provide similar methods for modifying text. StringBuilder is not synchronized and is generally faster in single-threaded scenarios. StringBuffer provides synchronized methods for thread-safe access to individual operations, although multiple operations are not automatically atomic. Therefore, I would generally use StringBuilder for single-threaded text manipulation and StringBuffer when synchronized access to a shared mutable buffer is required.
+The main difference between StringBuilder and StringBuffer is synchronization. Both are mutable and provide similar methods for modifying text. 
+StringBuilder is not synchronized and is generally faster in single-threaded scenarios. StringBuffer provides synchronized methods for thread-safe access 
+to individual operations, although multiple operations are not automatically atomic. Therefore, I would generally use StringBuilder for single-threaded text 
+manipulation and StringBuffer when synchronized access to a shared mutable buffer is required.
+
+StringBuffer - threadSafe   and synchronized
+StringBuilder - Not threadSafe and No synchronization.
+
+
+
 
 
 
@@ -142,3 +155,59 @@ The main difference between StringBuilder and StringBuffer is synchronization. B
 1. What is the difference between final, finally, and finalize?
 
 https://www.geeksforgeeks.org/java/java-final-finally-and-finalize/
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+What is the difference between static and instance variables?
+
+
+1. Static Variable
+Static variable poori class ka hota hai. Iski sirf ek shared copy hoti hai, jise class ke saare objects use kar sakte hain.
+
+Example: Classroom ki ek wall clock, jise saare bachche dekhte hain.
+static String classroom = "Sunshine";
+
+
+Agar static variable ki value change karte hain, toh us class ke sabhi objects ko updated value dikhegi.
+
+2. Instance Variable
+Instance variable har object ka apna hota hai. Har object ke paas iski alag copy hoti hai.
+
+Example: Har bachche ka apna teddy bear. Ek bachche ka teddy change karne se doosre bachche ka teddy nahi badlega.
+String toy = "Teddy";
+
+
+Agar ek object ke instance variable ki value change karte hain, toh doosre objects ki values par koi asar nahi padta.
+Example
+class Child {
+    static String classroom = "Sunshine";
+    String toy;
+}
+
+
+- classroom → Static variable, sabhi objects ke liye shared.
+- toy → Instance variable, har object ke liye alag.
+Interview mein yaad rakhne wali line:
+- Static = Sabka ek (shared copy).
+- Instance = Har object ka apna (separate copy).
+
+
+https://www.geeksforgeeks.org/java/static-variables-in-java/?utm_source=chatgpt.com
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+Q9. Can main() method be overloaded in Java?
+Yes, you can overload main() like any other method. However, the JVM will only call the standard public static void main(String[] args) as the entry point.
+The overloaded versions can be called explicitly within the code.
+
+
+Summary: Java mein main() method ko overload kar sakte hain, jaise main(int val) ya main(String args). Lekin JVM program start karne ke liye sirf standard public static void main(String[] args) method ko call karta hai. Baaki overloaded main() methods ko humein code ke andar se manually call karna padta hai.
