@@ -139,6 +139,15 @@ manipulation and StringBuffer when synchronized access to a shared mutable buffe
 StringBuffer - threadSafe   and synchronized
 StringBuilder - Not threadSafe and No synchronization.
 
+String and stringBuffer are the child class of Objects class
+Object class equals method is meant for reference/address comparition.
+
+string class overriden equals method for content comparition.
+but in stringBuffer class equals method is not overriden so its equals method is not for content comparition its using the Objects class equals method implementation
+which is for reference check.
+
+https://www.youtube.com/watch?v=4RsWkCJlfo0&list=PLd3UqWTnYXOlrdBwt2DTnF3u3W-1Kozk0&index=5
+
 
 
 
